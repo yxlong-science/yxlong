@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yuexuan Long (龙跃轩)"
+title: "About"
 author_profile: true
 redirect_from:
   - /about/
@@ -16,7 +16,7 @@ Research Interests
 - Evolutionary 3D genomics and epigenomics
 - Large language models (LLMs) for biomedical applications
 
-Selected Research
+Research Summary
 ======
 **Gene expression noise and human complex traits**
 - Constructed a single-cell atlas of gene expression noise from 1.23 million peripheral blood cells across 981 individuals. Identified 10,770 expression-noise QTLs ([enQTLs](https://doi.org/10.1101/2024.11.29.24318180)) across 8 immune cell types, demonstrating that expression noise functions as an independent heritable trait contributing to complex disease susceptibility.

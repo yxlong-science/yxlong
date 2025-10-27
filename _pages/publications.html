@@ -1,36 +1,207 @@
 ---
-layout: archive
-title: "Publications"
+layout: single
+title: Publications
 permalink: /publications/
-author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<style>
+.publications {
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
 
-{% include base_path %}
+.year-section {
+  margin-bottom: 40px;
+}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+.year-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
 
+.publication-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
 
+.publication-item:last-child {
+  border-bottom: none;
+}
 
+.pub-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.pub-title a {
+  color: #c7254e;
+  text-decoration: underline;
+}
+
+.pub-title a:hover {
+  color: #a02040;
+}
+
+.pub-authors {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.pub-journal {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.pub-details {
+  font-size: 14px;
+  color: #666;
+}
+
+.pub-extra {
+  margin-top: 5px;
+}
+
+.pub-extra a {
+  color: #e74c3c;
+  text-decoration: none;
+  border: 1px solid #e74c3c;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.pub-extra a:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.in-press {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 14px;
+}
+</style>
+
+<div class="publications">
+
+  <div class="year-section">
+    <h2 class="year-title">2025</h2>
+    
+    <div class="publication-item">
+      <div class="pub-title">
+        <a href="https://www.medrxiv.org/content/10.1101/2024.11.29.24318180v1" target="_blank">
+          Genetic determinants of gene expression noise and its role in complex trait variation
+        </a>
+        <span class="in-press">(in press)</span>
+      </div>
+      <div class="pub-authors">
+        Long, Yuexuan; Ni, Xiaolin; Chen, Tingwei; Hong, Qiyang; Wang, Jixin; Wang, Cong; Huang, Zigeng; Xu, Haiqing; Sun, Mengyi; Pang, Junling.
+      </div>
+      <div class="pub-details">
+        <span class="pub-journal">Cell Reports</span>.
+      </div>
+    </div>
+  </div>
+
+  <div class="year-section">
+    <h2 class="year-title">2024</h2>
+    
+    <div class="publication-item">
+      <div class="pub-title">
+        <a href="https://bmcbiology.biomedcentral.com/articles/10.1186/s12915-024-01114-3" target="_blank">
+          Drought response revealed by chromatin organization variation and transcriptional regulation in cotton
+        </a>
+      </div>
+      <div class="pub-authors">
+        Zhang, Boyang; Long, Yuexuan; Pei, Liuling; Huang, Xianhui; Li, Baoqi; Han, Bei; Zhang, Mengmeng; Lindsey, Keith; Zhang, Xianlong; Wang, Maojun.
+      </div>
+      <div class="pub-details">
+        <span class="pub-journal">BMC Biology</span>. <strong>22</strong>(1):114. 2024. Springer.
+      </div>
+    </div>
+
+    <div class="publication-item">
+      <div class="pub-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S1360138523001234" target="_blank">
+          Evolutionary insights into the organization of chromatin structure and landscape of transcriptional regulation in plants
+        </a>
+      </div>
+      <div class="pub-authors">
+        Long, Yuexuan; Wendel, Jonathan F; Zhang, Xianlong; Wang, Maojun.
+      </div>
+      <div class="pub-details">
+        <span class="pub-journal">Trends in Plant Science</span>. <strong>29</strong>(6):638-649. 2024. Elsevier.
+      </div>
+      <div class="pub-extra">
+        <a href="https://mp.weixin.qq.com/s/t6VRSd0sbI4hxBq0BXbE9A" target="_blank">中文介绍</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="year-section">
+    <h2 class="year-title">2022</h2>
+    
+    <div class="publication-item">
+      <div class="pub-title">
+        <a href="https://www.nature.com/articles/s41588-022-01188-z" target="_blank">
+          Genomic innovation and regulatory rewiring during evolution of the cotton genus <em>Gossypium</em>
+        </a>
+      </div>
+      <div class="pub-authors">
+        Wang, Maojun; Li, Jianying; Qi, Zhengyang; Long, Yuexuan; Pei, Liuling; Huang, Xianhui; Grover, Corrinne E; Du, Xiongming; Xia, Chunjiao; Wang, Pengcheng.
+      </div>
+      <div class="pub-details">
+        <span class="pub-journal">Nature Genetics</span>. <strong>54</strong>(12):1959-1971. 2022. Nature Publishing Group US New York.
+      </div>
+      <div class="pub-extra">
+        <a href="https://mp.weixin.qq.com/s/ovUXk-I3CSuK4cGXqMqinw" target="_blank">中文介绍</a>
+        <span style="color: #e67e22; font-weight: bold; margin-left: 10px;">(Cover Highlights)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="year-section">
+    <h2 class="year-title">2021</h2>
+    
+    <div class="publication-item">
+      <div class="pub-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S088875432100443X" target="_blank">
+          Disruption of topologically associating domains by structural variations in tetraploid cottons
+        </a>
+      </div>
+      <div class="pub-authors">
+        Long, Yuexuan; Liu, Zhenping; Wang, Pengcheng; Yang, Hang; Wang, Yuejin; Zhang, Sainan; Zhang, Xianlong; Wang, Maojun.
+      </div>
+      <div class="pub-details">
+        <span class="pub-journal">Genomics</span>. <strong>113</strong>(5):3405-3414. 2021. Elsevier.
+      </div>
+      <div class="pub-extra">
+        <a href="https://mp.weixin.qq.com/s/IkW9yVswwo32LDVg01ePIw" target="_blank">中文介绍</a>
+      </div>
+    </div>
+
+    <div class="publication-item">
+      <div class="pub-title">
+        <a href="https://apsjournals.apsnet.org/doi/10.1094/PDIS-08-21-1643-PDN" target="_blank">
+          First Report of Leptosphaeria biglobosa 'brassicae' Causing Blackleg on Brassica juncea var. multisecta in China
+        </a>
+      </div>
+      <div class="pub-authors">
+        Long, Yuexuan; Shang, Mingxue; Deng, Yue; Yu, Chuan; Wu, Mingde; Li, Guoqing.
+      </div>
+      <div class="pub-details">
+        <span class="pub-journal">Plant Disease</span>. <strong>105</strong>(11):3749. 2021. Am Phytopath Soc.
+      </div>
+    </div>
+  </div>
+
+</div>
