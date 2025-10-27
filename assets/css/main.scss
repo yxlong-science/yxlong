@@ -5,7 +5,7 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -41,3 +41,28 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* ================================
+   Custom Overrides
+   ================================ */
+
+/* Force circular avatar */
+.author__avatar img {
+  border-radius: 50% !important;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+/* Optional: Center the avatar visually */
+.author__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: add a soft shadow and smoother border */
+.author__avatar img {
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  border: 2px solid #f5f5f5;
+}

@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student at the Chinese Academy of Medical Sciences and Peking Union Medical College (CAMS & PUMC), working in [Long-Lab](https://sites.google.com/view/erping-long-lab/). I received my B.S. and M.S. from Huazhong Agricultural University (HZAU), where I worked on plant evolutionary 3D genomics in Academician Zhang Xianlong's [team](https://cotton.hzau.edu.cn/index.htm). My current research focuses on the genetic architecture of gene expression noise and its role in human complex traits, using single-cell and spatial transcriptomics approaches.
+I am a Ph.D. student at the Chinese Academy of Medical Sciences and Peking Union Medical College [CAMS & PUMC](https://sbm.pumc.edu.cn/), working in [Long-Lab](https://sites.google.com/view/erping-long-lab/). I received my B.S. and M.S. from Huazhong Agricultural University (HZAU), where I worked on plant evolutionary 3D genomics in Academician Zhang Xianlong's [team](https://cotton.hzau.edu.cn/index.htm). My current research focuses on the genetic architecture of gene expression noise and its role in human complex traits, using single-cell and spatial transcriptomics approaches.
 
 Research Interests
 ======
