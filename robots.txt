@@ -1,1 +1,1 @@
-Sitemap: https://yxlong-science.github.io/yxlong//sitemap.xml
+Sitemap: https://yxlong-science.github.io/sitemap.xml
